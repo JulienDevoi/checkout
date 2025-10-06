@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import HeroImage from '@/public/images/hero-image.png'
+import HeroImage from '@/public/images/mainimage.png'
 import Stats from '@/components/stats'
 
 export default function Hero() {
@@ -35,8 +35,8 @@ export default function Hero() {
           <Image className="rounded-lg shadow-2xl" src={HeroImage} width={1104} height={620} alt="Hero" priority />
         </div>
 
-        {/* Stats */}
-        <Stats />
+        {/* Stats 
+        <Stats /> */}
 
       </div>
     </section>

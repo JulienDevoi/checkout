@@ -16,58 +16,49 @@ export default function Features01() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center pb-12">
             <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Card fees and chargebacks drain margin</h2>
-            <p className="text-lg text-zinc-500">AI reads and understands your designs, and with nothing more than a single line of feedback, perform complex actions autonomously.</p>
+            <p className="text-lg text-zinc-500">2–3%+ card fees on every sale became the standard.</p>
+            <p className="text-lg text-zinc-500">Cross‑border FX adds up.</p>
+            <p className="text-lg text-zinc-500">Reconciliation and audits waste time.</p>
+            <p className="text-xl font-semibold text-zinc-900 mt-6 mb-2">But there's a better way.</p>
           </div>
           <div>
             {/* Tabs buttons */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               <button
                 className={`text-left px-4 py-5 border border-transparent rounded-sm ${tab !== 1 ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] shadow-xs rotate-1'}`}
                 onClick={(e) => { e.preventDefault(); setTab(1); }}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <div className="font-inter-tight font-semibold text-zinc-900">High fees</div>
+                  <div className="font-inter-tight font-semibold text-zinc-900">Create a Pay Link</div>
                   <svg className={`fill-zinc-400 shrink-0 ml-2 ${tab !== 1 ? 'hidden' : ''}`} xmlns="http://www.w3.org/2000/svg" width="10" height="10">
                     <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                   </svg>
                 </div>
-                <div className="text-sm text-zinc-500">Visually structure your designs and structure them easily.</div>
+                <div className="text-sm text-zinc-500">Setup your checkout page in seconds.</div>
               </button>
               <button
                 className={`text-left px-4 py-5 border border-transparent rounded-sm ${tab !== 2 ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] shadow-xs rotate-1'}`}
                 onClick={(e) => { e.preventDefault(); setTab(2); }}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <div className="font-inter-tight font-semibold text-zinc-900">Cross‑border FX adds up</div>
+                  <div className="font-inter-tight font-semibold text-zinc-900">Share the Link</div>
                   <svg className={`fill-zinc-400 shrink-0 ml-2 ${tab !== 2 ? 'hidden' : ''}`} xmlns="http://www.w3.org/2000/svg" width="10" height="10">
                     <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                   </svg>
                 </div>
-                <div className="text-sm text-zinc-500">Visually structure your designs and structure them easily.</div>
+                <div className="text-sm text-zinc-500">Drop it on your site, in DMs, email, social, invoices, or print as a QR.</div>
               </button>
               <button
                 className={`text-left px-4 py-5 border border-transparent rounded-sm ${tab !== 3 ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] shadow-xs rotate-1'}`}
                 onClick={(e) => { e.preventDefault(); setTab(3); }}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <div className="font-inter-tight font-semibold text-zinc-900">Chargebacks are silently killing your margin</div>
+                  <div className="font-inter-tight font-semibold text-zinc-900">Get paid & reconciled</div>
                   <svg className={`fill-zinc-400 shrink-0 ml-2 ${tab !== 3 ? 'hidden' : ''}`} xmlns="http://www.w3.org/2000/svg" width="10" height="10">
                     <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                   </svg>
                 </div>
-                <div className="text-sm text-zinc-500">Visually structure your designs and structure them easily.</div>
-              </button >
-              <button
-                className={`text-left px-4 py-5 border border-transparent rounded-sm ${tab !== 4 ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] shadow-xs rotate-1'}`}
-                onClick={(e) => { e.preventDefault(); setTab(4); }}
-              >
-                <div className="flex items-center justify-between mb-1">
-                  <div className="font-inter-tight font-semibold text-zinc-900">Reconciliation and audits waste time</div>
-                  <svg className={`fill-zinc-400 shrink-0 ml-2 ${tab !== 4 ? 'hidden' : ''}`} xmlns="http://www.w3.org/2000/svg" width="10" height="10">
-                    <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
-                  </svg>
-                </div>
-                <div className="text-sm text-zinc-500">Visually structure your designs and structure them easily.</div>
+                <div className="text-sm text-zinc-500">You see instant confirmation, ledger entries are created automatically.</div>
               </button >
             </div>
             {/* Tabs items */}
@@ -96,15 +87,6 @@ export default function Features01() {
                   <div className="w-full text-center transition ease-in-out data-closed:opacity-0 data-enter:duration-700 data-enter:data-closed:-translate-y-4 data-closed:absolute data-leave:duration-300 data-leave:data-closed:translate-y-4">                
                     <div className="inline-flex relative align-top">
                       <Image className="rounded-t-lg border border-transparent [background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] box-content shadow-2xl" src={FeatureImage01} width={600} height={360} alt="Feature 03" />
-                      <Image className="absolute top-0 left-full -translate-x-[70%] -mr-20 max-md:w-[45%]" src={FeatureIllustration} width={273} height={288} alt="Illustration" aria-hidden="true" />
-                    </div>
-                  </div>
-                </Transition>
-                {/* Item 4 */}
-                <Transition show={tab === 4}>
-                  <div className="w-full text-center transition ease-in-out data-closed:opacity-0 data-enter:duration-700 data-enter:data-closed:-translate-y-4 data-closed:absolute data-leave:duration-300 data-leave:data-closed:translate-y-4">                
-                    <div className="inline-flex relative align-top">
-                      <Image className="rounded-t-lg border border-transparent [background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] box-content shadow-2xl" src={FeatureImage01} width={600} height={360} alt="Feature 04" />
                       <Image className="absolute top-0 left-full -translate-x-[70%] -mr-20 max-md:w-[45%]" src={FeatureIllustration} width={273} height={288} alt="Illustration" aria-hidden="true" />
                     </div>
                   </div>
