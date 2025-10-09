@@ -12,11 +12,12 @@ export default function Features01() {
       <div className="py-12 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center pb-12">
-            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Card fees and chargebacks drain margin</h2>
+            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Card fees drain margin, <br /> frozen accounts put your business at risk</h2>
             <p className="text-lg text-zinc-500">2–3%+ card fees on every sale became the standard.</p>
             <p className="text-lg text-zinc-500">Cross‑border FX adds up.</p>
             <p className="text-lg text-zinc-500">Reconciliation and audits waste time.</p>
-            <p className="text-xl font-semibold text-zinc-900 mt-6 mb-2">But there's a better way.</p>
+            <p className="text-lg text-zinc-500">Bank & PSPs freezes put your business at risk.</p>
+            <p className="text-xl font-semibold text-zinc-900 mt-6 mb-2">There's a better way.</p>
           </div>
           <div>
             {/* Tabs items */}
@@ -155,14 +156,18 @@ export default function Features01() {
                 </Transition>
               </div>
             </div>
+            {/* Section Title */}
+            <div className="text-center max-w-4xl mx-auto pt-8 pb-12">
+              <h3 className="text-2xl md:text-3xl font-bold text-zinc-900">Launch in minutes. No code, no KYC, no middlemen.</h3>
+            </div>
             {/* Tabs buttons */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto pt-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
               <button
                 className={`text-left px-4 py-5 border border-transparent rounded-sm ${tab !== 1 ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] shadow-xs rotate-1'}`}
                 onClick={(e) => { e.preventDefault(); setTab(1); }}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <div className="font-inter-tight font-semibold text-zinc-900">Create a Pay Link</div>
+                  <div className="font-inter-tight font-semibold text-zinc-900">1. Create a Checkout Page</div>
                   <svg className={`fill-zinc-400 shrink-0 ml-2 ${tab !== 1 ? 'hidden' : ''}`} xmlns="http://www.w3.org/2000/svg" width="10" height="10">
                     <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                   </svg>
@@ -174,24 +179,24 @@ export default function Features01() {
                 onClick={(e) => { e.preventDefault(); setTab(2); }}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <div className="font-inter-tight font-semibold text-zinc-900">Share the Link</div>
+                  <div className="font-inter-tight font-semibold text-zinc-900">2. Share the Link</div>
                   <svg className={`fill-zinc-400 shrink-0 ml-2 ${tab !== 2 ? 'hidden' : ''}`} xmlns="http://www.w3.org/2000/svg" width="10" height="10">
                     <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                   </svg>
                 </div>
-                <div className="text-sm text-zinc-500">Drop it on your site, in DMs, email, social, invoices, or print as a QR.</div>
+                <div className="text-sm text-zinc-500">Drop it on your website, in DMs, email, social, invoices, or print as a QR.</div>
               </button>
               <button
                 className={`text-left px-4 py-5 border border-transparent rounded-sm ${tab !== 3 ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] shadow-xs rotate-1'}`}
                 onClick={(e) => { e.preventDefault(); setTab(3); }}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <div className="font-inter-tight font-semibold text-zinc-900">Get paid & reconciled</div>
+                  <div className="font-inter-tight font-semibold text-zinc-900">3. Get paid & reconciled</div>
                   <svg className={`fill-zinc-400 shrink-0 ml-2 ${tab !== 3 ? 'hidden' : ''}`} xmlns="http://www.w3.org/2000/svg" width="10" height="10">
                     <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                   </svg>
                 </div>
-                <div className="text-sm text-zinc-500">You see instant confirmation, ledger entries are created automatically.</div>
+                <div className="text-sm text-zinc-500">You receive payments instantly, ledger entries are created automatically.</div>
               </button >
             </div>
           </div>

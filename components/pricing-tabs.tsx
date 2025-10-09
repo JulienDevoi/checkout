@@ -28,7 +28,7 @@ export default function PricingTabs() {
     {
       contacts: '10K',
       plans: {
-        essential: '0.5',
+        essential: '1',
         premium: '49',
         enterprise: '99'
       }
@@ -136,7 +136,7 @@ export default function PricingTabs() {
                     <div className="font-inter-tight inline-flex items-baseline mb-2">
                       <span className="text-zinc-900 font-bold text-2xl">%</span>
                       <span className="text-zinc-900 font-bold text-3xl">{prices[tier].plans.essential}</span>
-                      <span className="text-zinc-500 font-medium">per transaction</span>
+                      <span className="text-zinc-500 font-medium">&nbsp;per transaction</span>
                     </div>
                     <div className="text-zinc-500">Same price for every transaction.</div>
                   </div>

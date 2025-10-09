@@ -17,7 +17,7 @@ export default function Hero() {
                     </svg> Checkout </em>  for global commerce
                 </h1>
                 <p className="text-lg text-zinc-500 mb-8">
-                Accept stablecoins from any wallet. <br />Instant settlement, no chargebacks, no frozen accounts, and automatic accounting.
+                Accept stablecoins from any wallet. <br />Instant settlement, no chargebacks, no frozen accounts, automatic accounting.
                 </p>
                 <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                   <div>
