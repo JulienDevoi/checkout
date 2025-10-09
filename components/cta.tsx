@@ -13,21 +13,21 @@ export default function Features02() {
                 <Image src={Logo} width={60} height={60} alt="Logo" />
               </Link>
             </div>
-            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Ready to <em className="relative not-italic inline-flex justify-center items-end">
-                keep more
+            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4"><em className="relative not-italic inline-flex justify-center items-end">
+                Stop losing
                 <svg className="absolute fill-zinc-300 w-[calc(100%+1rem)] -z-10" xmlns="http://www.w3.org/2000/svg" width="120" height="10" viewBox="0 0 120 10" aria-hidden="true" preserveAspectRatio="none">
                   <path d="M118.273 6.09C79.243 4.558 40.297 5.459 1.305 9.034c-1.507.13-1.742-1.521-.199-1.81C39.81-.228 79.647-1.568 118.443 4.2c1.63.233 1.377 1.943-.17 1.89Z" />
                 </svg>
-              </em> from every order?
+              </em> 4% to Stripe
             </h2>
-            <p className="text-lg text-zinc-500 mb-8">Lower fees at checkout. Audit‑ready by default.</p>
+            <p className="text-lg text-zinc-500 mb-8">Get paid instantly in stablecoins for less than 1%.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <div>
-                <a className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow-sm" href="/request-demo">Create your first Checkout Page</a>
+                <a className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow-sm" href="/request-demo">Your first Checkout live in 5 minutes</a>
               </div>
             </div>
           </div>
-          {/* Clients */}
+          {/* Clients 
           <div className="text-center">
             <ul className="inline-flex flex-wrap items-center justify-center -m-2 [mask-image:linear-gradient(to_right,transparent_8px,--theme(--color-white/.7)_64px,--theme(--color-white)_50%,--theme(--color-white/.7)_calc(100%-64px),transparent_calc(100%-8px))]">
               <li className="m-2 p-4 relative rounded-lg border border-transparent [background:linear-gradient(var(--color-zinc-50),var(--color-zinc-50))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box]">
@@ -56,7 +56,7 @@ export default function Features02() {
                 </svg>
               </li>
             </ul>
-          </div>
+          </div>*/}
         </div>
       </div>
     </section>

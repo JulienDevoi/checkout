@@ -2,9 +2,6 @@
 
 import { useState } from 'react'
 import { Transition } from '@headlessui/react'
-import Image from 'next/image'
-import FeatureIllustration from '@/public/images/feature-illustration.png'
-import FeatureImage01 from '@/public/images/feature-01.png'
 
 export default function Features01() {
 
@@ -22,8 +19,144 @@ export default function Features01() {
             <p className="text-xl font-semibold text-zinc-900 mt-6 mb-2">But there's a better way.</p>
           </div>
           <div>
+            {/* Tabs items */}
+            <div className="relative lg:max-w-none pb-12 md:pb-20">
+              <div className="relative flex flex-col">
+                {/* Comparison Table - Same for all tabs */}
+                <Transition show={tab === 1 || tab === 2 || tab === 3}>
+                  <div className="w-full transition ease-in-out data-closed:opacity-0 data-enter:duration-700 data-enter:data-closed:-translate-y-4 data-leave:duration-300 data-leave:data-closed:translate-y-4">
+                    <div className="max-w-4xl mx-auto">
+                      <div className="overflow-hidden rounded-3xl border border-transparent [background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] shadow-2xl">
+                        <div className="overflow-x-auto">
+                          <table className="w-full">
+                            <thead>
+                              <tr className="border-b-2 border-zinc-200">
+                                <th className="px-8 py-6 text-left text-base font-semibold text-zinc-900 bg-gradient-to-br from-zinc-50 to-white"></th>
+                                <th className="px-8 py-6 text-center bg-gradient-to-br from-zinc-50 to-white">
+                                  <div className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-zinc-100 rounded-full">
+                                    <svg className="w-5 h-5 text-zinc-500" fill="currentColor" viewBox="0 0 20 20">
+                                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                                    </svg>
+                                    <span className="text-base font-bold text-zinc-600">Stripe / PayPal</span>
+                                  </div>
+                                </th>
+                                <th className="px-8 py-6 text-center bg-gradient-to-br from-emerald-50 to-white">
+                                  <div className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-emerald-100 rounded-full">
+                                    <svg className="w-5 h-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                    </svg>
+                                    <span className="text-base font-bold text-emerald-600">Request Checkout</span>
+                                  </div>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody className="divide-y divide-zinc-100">
+                              <tr className="hover:bg-zinc-50/50 transition-all group">
+                                <td className="px-8 py-5 text-base font-semibold text-zinc-900">💳 Fees</td>
+                                <td className="px-8 py-5 text-center">
+                                  <span className="inline-flex items-center gap-2 text-base text-zinc-600">
+                                    <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                                    </svg>
+                                    2.9–4%
+                                  </span>
+                                </td>
+                                <td className="px-8 py-5 text-center">
+                                  <span className="inline-flex items-center gap-2 text-base font-bold text-emerald-600">
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                    </svg>
+                                    ~1%
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr className="hover:bg-zinc-50/50 transition-all group">
+                                <td className="px-8 py-5 text-base font-semibold text-zinc-900">⚡ Payout time</td>
+                                <td className="px-8 py-5 text-center">
+                                  <span className="inline-flex items-center gap-2 text-base text-zinc-600">
+                                    <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                                    </svg>
+                                    3–7 days
+                                  </span>
+                                </td>
+                                <td className="px-8 py-5 text-center">
+                                  <span className="inline-flex items-center gap-2 text-base font-bold text-emerald-600">
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                    </svg>
+                                    Instant
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr className="hover:bg-zinc-50/50 transition-all group">
+                                <td className="px-8 py-5 text-base font-semibold text-zinc-900">🛡️ Chargebacks</td>
+                                <td className="px-8 py-5 text-center">
+                                  <span className="inline-flex items-center gap-2 text-base text-zinc-600">
+                                    <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                                    </svg>
+                                    Yes
+                                  </span>
+                                </td>
+                                <td className="px-8 py-5 text-center">
+                                  <span className="inline-flex items-center gap-2 text-base font-bold text-emerald-600">
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                    </svg>
+                                    Never
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr className="hover:bg-zinc-50/50 transition-all group">
+                                <td className="px-8 py-5 text-base font-semibold text-zinc-900">🌍 Currencies</td>
+                                <td className="px-8 py-5 text-center">
+                                  <span className="inline-flex items-center gap-2 text-base text-zinc-600">
+                                    <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                                    </svg>
+                                    Limited
+                                  </span>
+                                </td>
+                                <td className="px-8 py-5 text-center">
+                                  <span className="inline-flex items-center gap-2 text-base font-bold text-emerald-600">
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                    </svg>
+                                    Global (USDT, USDC)
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr className="hover:bg-zinc-50/50 transition-all group">
+                                <td className="px-8 py-5 text-base font-semibold text-zinc-900">🔒 Account risk</td>
+                                <td className="px-8 py-5 text-center">
+                                  <span className="inline-flex items-center gap-2 text-base text-zinc-600">
+                                    <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                                    </svg>
+                                    Frozen anytime
+                                  </span>
+                                </td>
+                                <td className="px-8 py-5 text-center">
+                                  <span className="inline-flex items-center gap-2 text-base font-bold text-emerald-600">
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                    </svg>
+                                    You own your funds
+                                  </span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Transition>
+              </div>
+            </div>
             {/* Tabs buttons */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto pt-8">
               <button
                 className={`text-left px-4 py-5 border border-transparent rounded-sm ${tab !== 1 ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] shadow-xs rotate-1'}`}
                 onClick={(e) => { e.preventDefault(); setTab(1); }}
@@ -60,38 +193,6 @@ export default function Features01() {
                 </div>
                 <div className="text-sm text-zinc-500">You see instant confirmation, ledger entries are created automatically.</div>
               </button >
-            </div>
-            {/* Tabs items */}
-            <div className="relative lg:max-w-none [mask-image:linear-gradient(white_0%,white_calc(100%-40px),_transparent_calc(100%-1px))] -mx-6">
-              <div className="relative flex flex-col pt-12 md:pt-20 mx-6">
-                {/* Item 1 */}
-                <Transition show={tab === 1}>
-                  <div className="w-full text-center transition ease-in-out data-closed:opacity-0 data-enter:duration-700 data-enter:data-closed:-translate-y-4 data-closed:absolute data-leave:duration-300 data-leave:data-closed:translate-y-4">                
-                    <div className="inline-flex relative align-top">
-                      <Image className="rounded-t-lg border border-transparent [background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] box-content shadow-2xl" src={FeatureImage01} width={600} height={360} alt="Feature 01" />
-                      <Image className="absolute top-0 left-full -translate-x-[70%] -mr-20 max-md:w-[45%]" src={FeatureIllustration} width={273} height={288} alt="Illustration" aria-hidden="true" />
-                    </div>
-                  </div>
-                </Transition>
-                {/* Item 2 */}
-                <Transition show={tab === 2}>
-                  <div className="w-full text-center transition ease-in-out data-closed:opacity-0 data-enter:duration-700 data-enter:data-closed:-translate-y-4 data-closed:absolute data-leave:duration-300 data-leave:data-closed:translate-y-4">                
-                    <div className="inline-flex relative align-top">
-                      <Image className="rounded-t-lg border border-transparent [background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] box-content shadow-2xl" src={FeatureImage01} width={600} height={360} alt="Feature 02" />
-                      <Image className="absolute top-0 left-full -translate-x-[70%] -mr-20 max-md:w-[45%]" src={FeatureIllustration} width={273} height={288} alt="Illustration" aria-hidden="true" />
-                    </div>
-                  </div>
-                </Transition>
-                {/* Item 3 */}
-                <Transition show={tab === 3}>
-                  <div className="w-full text-center transition ease-in-out data-closed:opacity-0 data-enter:duration-700 data-enter:data-closed:-translate-y-4 data-closed:absolute data-leave:duration-300 data-leave:data-closed:translate-y-4">                
-                    <div className="inline-flex relative align-top">
-                      <Image className="rounded-t-lg border border-transparent [background:linear-gradient(var(--color-white),var(--color-white))_padding-box,linear-gradient(120deg,var(--color-zinc-300),var(--color-zinc-100),var(--color-zinc-300))_border-box] box-content shadow-2xl" src={FeatureImage01} width={600} height={360} alt="Feature 03" />
-                      <Image className="absolute top-0 left-full -translate-x-[70%] -mr-20 max-md:w-[45%]" src={FeatureIllustration} width={273} height={288} alt="Illustration" aria-hidden="true" />
-                    </div>
-                  </div>
-                </Transition>
-              </div>
             </div>
           </div>
         </div>
